@@ -1,0 +1,57 @@
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+.table thead tr {
+    background-color: #aaa;
+}
+
+table th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid black;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #ccc;
+}
+
+table tbody tr:nth-child(odd) {
+    background-color: #eee;
+}
+
+.min-width-100 {
+    min-width: 100px;
+}
+
+#left-panel {
+    display: block;
+    background-color: #f0f0f0; /* Change the background color as desired */
+    float: left;
+    height: 100vh;
+    /* Make it a floating aside panel */
+}
+
+#content {
+    margin-left: 200px; /* Set the margin to accommodate the left panel's width */
+}

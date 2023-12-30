@@ -1,0 +1,25 @@
+﻿@model List<CompanyDetailsDto>
+
+<h2>Company Index</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Full Address</th>
+            <th>Number of Employees</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var company in Model)
+        {
+            <tr>
+                <td>@company.Id</td>
+                <td>@company.Name</td>
+                <td>@company.FullAddress</td>
+                <td>@company.NumberOfEmployees</td>
+            </tr>
+        }
+    </tbody>
+</table>
